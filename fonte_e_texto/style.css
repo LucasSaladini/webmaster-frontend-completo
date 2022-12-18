@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o conteúdo do nosso website */
+.article {
+    width: 1280px;
+    margin: 40px auto;
+    text-align: center;
+    background: rgb(200, 200, 200);
+    padding: 40px;
+}
+
+.article h1 {
+    color: rgb(66, 149, 244);
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.article p {
+    font-size: 17px;
+    font-family: tahoma;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFF;
+    margin-top: 12px;
+    line-height: 40px;
+    text-align: left;
+}
