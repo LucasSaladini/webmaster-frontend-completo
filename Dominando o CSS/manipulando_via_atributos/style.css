@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+a[href="http://www.google.com"] {
+    background: yellow;
+}
+
+a[href*="dankicode"] {
+    background: blue;
+    color: white;
+}
+
+a[attr~="yahoo"] {
+    background: black;
+    color: white;
+}
+
+a[attr|="facebook"] {
+    background: blueviolet;
+}
+
+a[attr^="instagram"] {
+    background: violet;
+}
+
+a[attr$="discord"] {
+    background: slategrey;
+    color: white;
+}
