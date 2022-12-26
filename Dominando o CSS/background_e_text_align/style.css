@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.bg {
+    width: 100%;
+    height: 400px;
+    background-image: url('../background_e_text_align/images/licensed-image.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.item {
+    display: inline-block;
+    width: 33.3333%;
+    margin-right: -4px;
+}
+
+.item p {
+    display: inline-block;
+}
+
+.item img {
+    width: 80%;
+}
