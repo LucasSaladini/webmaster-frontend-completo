@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.test, .test1, .test2 {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background: gray;
+    display: inline-block;
+}
+
+.test1 {
+    background: rgb(98, 98, 98);
+}
+
+.test2 {
+    background: rgb(50, 50, 50);
+}
+
+.test:hover {
+    background: blue;
+    height: 400px;
+}
+
+.test:hover, .test1, .test2 {
+    vertical-align: top;
+}
+
+.test1:active {
+    background: black;
+}
+
+.test3 {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.test3:focus {
+    background: red;
+}
+
+.link1 {
+    margin-left: 30px;
+}
+
+.link1:link {
+    color: orange;
+}
+
+.link1:visited {
+    color: purple;
+}
