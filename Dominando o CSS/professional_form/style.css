@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+form {
+    width: 96%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form fieldset {
+    padding: 20px 15px;
+    border: 1px solid #ccc;
+}
+
+form legend {
+    font-size: 17px;
+    color: rgb(130, 130, 130);
+}
+
+form input[type=text], form input[type=email] {
+    margin-top: 30px;
+    width: 80%;
+    display: inline-block;
+    padding: 5px 13px;
+    border: 1px solid #ccc;
+    font-family: Tahoma;
+}
+
+form input[type=text]:focus, form input[type=email]:focus, form textarea:focus {
+    outline: none;
+}
+
+form select {
+    width: calc(80% + 26px);
+    margin-top: 30px;
+    display: inline-block;
+    padding: 5px 13px;
+    border: 1px solid #ccc;
+    font-family: Tahoma;
+}
+
+
+form h2 {
+    margin-top: 20px;
+    color: rgb(100, 100, 100);
+}
+
+.radio_input {
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.radio_input span {
+    margin-left: 13px;
+    font-size: 16px;
+    color: rgb(130, 130, 130);
+}
+
+form textarea {
+    margin-top: 30px;
+    width: 80%;
+    height: 140px;
+    padding: 5px 13px;
+    resize: none;
+    border: 1px solid #ccc;
+    font-family: Tahoma;
+}
+
+form input[type=submit] {
+    margin-top: 30px;
+    border: 2px solid rgb(130, 130, 130);
+    background: rgb(140, 140, 140);
+    color: #fff;
+    font-size: 16px;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+}

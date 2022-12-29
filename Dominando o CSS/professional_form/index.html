@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Professional Form</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Meu formulário</legend>
+        <div>
+          <input type="text" name="name" placeholder="Digite o seu nome" />
+        </div>
+        <div>
+          <input type="email" name="email" placeholder="Digite o seu e-mail" />
+        </div>
+        <div>
+          <select name="list">
+            <option disabled selected>Qual sua idade?</option>
+            <option>20</option>
+            <option>25+</option>
+            <option>40+</option>
+          </select>
+        </div>
+        <h2>Qual sua cidade?</h2>
+        <div class="radio_input">
+          <div>
+            <input type="radio" name="city" value="Florianópolis" /><span
+              >Florianópolis</span
+            >
+          </div>
+          <div>
+            <input type="radio" name="city" value="São Paulo" /><span
+              >São Paulo</span
+            >
+          </div>
+          <div>
+            <input type="radio" name="city" value="Rio de Janeiro" /><span
+              >Rio de Janeiro</span
+            >
+          </div>
+        </div>
+        <div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Possui alguma observação?"
+          ></textarea>
+        </div>
+        <div>
+          <input type="submit" name="action" value="Enviar" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
