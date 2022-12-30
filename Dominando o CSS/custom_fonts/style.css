@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.open_sans {
+    font-family: "Open-sans";
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../custom_fonts/fonts/Roboto/Roboto-Light.ttf');
+}
+
+.roboto {
+    font-family: 'Roboto';
+}
