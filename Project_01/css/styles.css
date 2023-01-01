@@ -10,7 +10,7 @@ html, body {
 }
 
 .center {
-    width: 1280px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -43,8 +43,9 @@ html, body {
     float: right;
     position: relative;
     top: -15px;
-    border: 8px solid #ccc;
+    border: 8px solid rgba(120, 120, 120, 0.5);
     padding: 10px;
+    background-clip: padding-box;
 }
 
 .form h2 {
@@ -92,4 +93,51 @@ html, body {
 
 .form input[type=submit]:hover {
     background: #1D1F3B;
+}
+
+.cta {
+    float: left;
+    width: 619px;
+    height: 270px;
+    background: rgba(33, 35, 67, 0.7);
+    margin-top: 40px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.cta ul {
+    list-style-position: inside;
+}
+
+.cta ul li {
+    color: white;
+    margin-top: 18px;
+}
+
+.container2 {
+    padding: 40px 0;
+    background: #DDDDDD;
+    text-align: center;
+}
+
+.container2 h2 {
+    font-weight: normal;
+}
+
+.container2 p {
+    width: 698px;
+    display: inline-block;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/arrow.png');
+    background-size: 100% 100%;
+    position: relative;
+    top: 60px;
+    left: 50%;
+    margin-left: -20px;
 }
