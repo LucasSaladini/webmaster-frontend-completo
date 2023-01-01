@@ -72,7 +72,7 @@ html, body {
     margin: 20px 0;
 }
 
-.input-container input[type=text] {
+.input-container input[type=text], .input-container input[type=email], .input-container input[type=tel] {
     width: 344px;
     height: 45px;
     border: 1px solid #ccc;
@@ -176,4 +176,16 @@ html, body {
 
 .container-single img {
     width: 70px;
+}
+
+.footer {
+    padding: 20px 0;
+    border-top: 2px solid #888888;
+    clear: both;
+    text-align: center;
+    color: #888888;
+}
+
+.footer p {
+    margin-top: 8px;
 }
