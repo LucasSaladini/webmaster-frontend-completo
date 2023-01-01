@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open sans", sans-serif;
 }
 
 html, body {
@@ -37,7 +38,58 @@ html, body {
 
 .form {
     width: 400px;
-    height: 100%;
+    height: calc(100% + 30px);
     background: white;
     float: right;
+    position: relative;
+    top: -15px;
+    border: 8px solid #ccc;
+    padding: 10px;
+}
+
+.form h2 {
+    font-weight: normal;
+    color: #999999;
+    font-size: 20px;
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+.input-container span, .form p {
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    color: #BBBBBB;
+}
+
+.form p {
+    margin: 20px 0;
+}
+
+.input-container input[type=text] {
+    width: 344px;
+    height: 45px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+}
+
+.form .input-submit-container {
+    text-align: center;
+}
+
+.form input[type=submit] {
+    width: 280px;
+    height: 56px;
+    background: #363A6D;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.form input[type=submit]:hover {
+    background: #1D1F3B;
 }

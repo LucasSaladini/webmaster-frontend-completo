@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Project_01/css/styles.css" />
+    <!-- Custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>Project 01</title>
   </head>
   <body>
@@ -17,7 +24,34 @@
     <!-- End of header -->
     <div class="container-banner">
       <div class="center">
-        <div class="form"></div>
+        <div class="form">
+          <form action="action">
+            <h2>
+              Preencha o formulário e inicie sua caminhada para se tornar um
+              webmaster!
+            </h2>
+            <div class="input-container">
+              <span>Nome *</span>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <!-- End of input-container -->
+            <div class="input-container">
+              <span>E-mail *</span>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <!-- End of input-container -->
+            <div class="input-container">
+              <span>Telefone *</span>
+              <input type="tel" name="telephone" id="telephone" required />
+            </div>
+            <!-- End of input-container -->
+            <p class="warning">* Campos obrigatórios</p>
+            <div class="input-submit-container">
+              <input type="submit" name="action" value="Enviar" />
+            </div>
+          </form>
+        </div>
+        <!-- End of form -->
       </div>
       <!-- End of center -->
     </div>
