@@ -136,3 +136,64 @@ form.signup_form input[type=submit] {
     max-width: 200px;
     font-size: 19px;
 }
+
+form .w100 h2 {
+    color: #1D2129;
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+form select.birth {
+    float: left;
+    margin-top: 5px;
+}
+
+.input_radio {
+    margin: 8px 10px;
+    float: left;
+}
+
+.input_radio h2 {
+    display: inline-block;
+}
+
+.input_radio input[type=radio] {
+    display: inline-block;
+    width: auto !important;
+}
+
+section.language {
+    padding: 30px 0 0 0;
+    background: white;
+}
+
+section.language .center {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+section.language a {
+    color: #365899;
+    text-decoration: none;
+    font-size: 12px;
+    padding-right: 15px;
+}
+
+section.language a.selected_language {
+    color: #737373;
+}
+
+section.language input[type=button] {
+    width: 25px;
+    border-radius: 0px !important;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+section.language .center:nth-child(2) {
+    border: none;
+    padding-top: 10px;
+}

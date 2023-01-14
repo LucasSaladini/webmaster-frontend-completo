@@ -68,6 +68,42 @@
             <!-- End of w100 -->
             <div class="clear"></div>
             <div class="w100">
+              <h2>Data de Nascimento</h2>
+              <select name="birth-day" id="birth-day" class="birth">
+                <?php 
+                  for($i = 1; $i <= 31; $i++){
+                ?>
+                <option value="<?php echo $i; ?>"><?php echo $i ?></option>
+                <?php } ?>
+              </select>
+              <select name="birth-month" id="birth-month" class="birth">
+                <option value="0">Junho</option>
+              </select>
+              <select name="birth-year" id="birth-year" class="birth">
+                <?php
+                  for($i = 1900; $i <= 2023; $i++) {
+                ?>
+                <option value="<?php echo $i ?>"><?php echo $i ?></option>
+                <?php } ?>
+              </select>
+              <div class="clear"></div>
+            </div>
+            <!-- End of w100 -->
+            <div class="w100">
+              <div class="input_radio">
+                <input type="radio" name="gender" id="gender" value="Masculino">
+                <h2>Masculino</h2>
+              </div>
+              <!-- End of input_radio -->
+              <div class="input_radio">
+                <input type="radio" name="gender" id="gender" value="Feminino">
+                <h2>Feminino</h2>
+              </div>
+              <!-- End of input_radio -->
+              <div class="clear"></div>
+            </div>
+            <!-- End of w100 -->
+            <div class="w100">
               <input type="submit" value="Cadastrar" name="action">
             </div>
             <!-- End of w100 -->
@@ -79,5 +115,50 @@
       <!-- End of center -->
     </section>
     <!-- End of main -->
+    <section class="language">
+      <div class="center">
+        <a href="#" class="selected_language">Português (Brasil)</a>
+        <a href="#">English (US)</a>
+        <a href="#">Español</a>
+        <a href="#">Français (France)</a>
+        <a href="#">中文(简体</a>
+        <a href="#">العربية<a>
+        <a href="#">Italiano</a>
+        <a href="#">한국어</a>
+        <a href="#">Deustche</a>
+        <a href="#">हिन्दी</a>
+        <a href="#">日本語</a>
+        <input type="button" value="+">
+      </div>
+      <!-- End of center -->
+      <div class="center">
+        <a href="#">Cadastre-se</a>
+        <a href="#">Entrar</a>
+        <a href="#">Messenger</a>
+        <a href="#">Facebook Lite</a>
+        <a href="#">Celular</a>
+        <a href="#">Encontrar amigos</a>
+        <a href="#">Atalhos</a>
+        <a href="#">Pessoas</a>
+        <a href="#">Páginas</a>
+        <a href="#">Locais</a>
+        <a href="#">Jogos</a>
+        <a href="#">Locais</a>
+        <a href="#">Celebridades</a>
+        <a href="#">Grupos</a>
+        <a href="#">Sobre</a>
+        <a href="#">Criar anúncio</a>
+        <a href="#">Criar página</a>
+        <a href="#">Desenvolvedores</a>
+        <a href="#">Carreiras</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Cookies</a>
+        <a href="#">Opções de anúncio</a>
+        <a href="#">Termos</a>
+        <a href="#">Ajuda</a>
+      </div>
+      <!-- End of center -->
+    </section>
+    <!-- End of language -->
   </body>
 </html>
