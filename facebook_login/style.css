@@ -197,3 +197,54 @@ section.language .center:nth-child(2) {
     border: none;
     padding-top: 10px;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    form.form-login {
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin-top: 17px;
+        display: inline-block;
+    }
+
+    .form-login .form-element {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .form-element p {
+        color: white;
+        font-size: 14px;
+    }
+
+    .form-element input[type=email],
+    .form-element input[type=password] {
+        margin-top: 4px;
+        border: none;
+        height: 22px;
+        padding-left: 3px;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .form-element input[type=submit] {
+        width: 320px;
+        max-width: 320px;
+        margin-top: 15px;
+    }
+
+    .person {
+        display: none;
+    }
+
+    .signup {
+        width: 100%;
+    }
+}
