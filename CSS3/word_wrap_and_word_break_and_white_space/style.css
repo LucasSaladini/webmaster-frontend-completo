@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    padding: 30px 2%;
+    background: rgb(220, 220, 220);
+    position: relative;
+}
+
+.box p {
+    color: #444;
+    font-size: 13px;
+    border-bottom: 2px solid green;
+    display: inline;
+    word-wrap: nowrap;
+    word-break: break-all;
+    white-space: pre-line;
+}
