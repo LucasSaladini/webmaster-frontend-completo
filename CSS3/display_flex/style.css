@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    align-items: center;
+}
+
+aside {
+    background: #ccc;
+    padding: 90px 20px;
+    order: 2;
+}
+
+article {
+    background: gray;
+    padding: 30px;
+    order: 1;
+}
