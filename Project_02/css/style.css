@@ -20,7 +20,7 @@ html, body {
 
 header {
     background: #D6D6D6;
-    padding: 10px 2%;
+    padding: 10px 2% 30px 2%;
 }
 
 .logo-1 {
@@ -43,12 +43,79 @@ header {
     background-position: center;
 }
 
+section.cover-form {
+    width: 100%;
+    padding: 0 2%;
+}
+
+.bg {
+    background-image: url('../images/bg-form.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.form-container {
+    float: right;
+    margin-right: 40px;
+    width: 400px;
+    height: 110%;
+    position: relative;
+    top: -5%;
+    background: white;
+}
+
+.form-container h2 {
+    text-transform: uppercase;
+    background: rgb(234, 236, 239);
+    padding: 20px 15px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.form-container form {
+    margin-top: 8px;
+    padding: 15px;
+}
+
+.form-container form p {
+    font-size: 14px;
+    color: #525252;
+}
+
+.form-wrapper:not(:first-child) {
+    margin-top: 20px;
+}
+
+.form-wrapper:last-child {
+    margin-top: 20px;
+}
+
+.form-container form input[type=text] {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form input[type=submit] {
+    background: #033C50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
 @media screen and (max-width: 510px) {
     header {
         text-align: center;
     }
     
-    .logo-1, .logo-2 {
+    [class^="logo"]{
         float: none;
         display: inline-block;
         margin-top: 10px;
