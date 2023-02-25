@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    background: black;
+    margin: 78px auto;
+    /* border-radius: 20px; */
+    /* border-radius: 50%; */
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.transform {
+    transform: translate(-50%, -50%);
+    width: 40%;
+    max-width: 500px;
+    height: 500px;
+    border: 10px solid #ccc;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: 2s;
+}
+
+.transform:hover {
+    transform: translate(-50%, -50%) rotate(45deg) scale(2,2);
+}
