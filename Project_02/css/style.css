@@ -141,6 +141,56 @@ section.call p {
     font-weight: normal;
 }
 
+.flex-mosaic {
+    display: flex;
+}
+
+.item-1-mosaic {
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    height: 300px;
+}
+
+.item-2-mosaic {
+    width: 40%;
+    padding: 45px 40px;
+    background: #4683ab;
+}
+
+.item-2-mosaic p {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+footer img {
+    width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-mosaic {
+        display: block;
+    }
+    
+    .item-1-mosaic {
+        padding-top: 80%;
+        width: 100%;
+    }
+
+    .item-2-mosaic {
+        text-align: justify;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .bg {
         text-align: center;
