@@ -46,26 +46,24 @@ header {
 
 section.cover-form {
     width: 100%;
-    padding: 0 2%;
 }
 
 .bg {
     background-image: url('../images/bg-form.jpg');
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 560px;
+    position: relative;
 }
 
 .form-container {
-    float: right;
-    margin-right: 40px;
+    position: absolute;
+    right: 30px;
+    top: -2.5%;
     width: 400px;
-    height: 110%;
-    position: relative;
-    top: -5%;
+    height: 105%;
     background: white;
     box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
-    z-index: 2;
 }
 
 .form-container h2 {
@@ -78,7 +76,7 @@ section.cover-form {
 
 .form-container form {
     margin-top: 8px;
-    padding: 15px;
+    padding: 15px 15px;
 }
 
 .form-container form p {
@@ -116,24 +114,47 @@ section.cover-form {
 section.call {
     text-align: center;
     width: 100%;
-    display: inline-block;
-    top: -50px;
     z-index: 1;
-    position: relative;
 }
 
-section.call .container {
-    background: #7c6757;
-    padding: 50px 0;
+section.call div.container {
+    background: #29526d;
+    padding: 70px 0 50px 0;
 }
 
 section.call h2 {
-    width: 96%;
+    width: 98%;
     max-width: 700px;
     display: inline-block;
     color: white;
     font-size: 24px;
     font-weight: normal;
+}
+
+section.call p {
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 960px) {
+    .bg {
+        text-align: center;
+        padding: 40px 0;
+        height: auto;
+    }
+
+    .form-container {
+        width: 96%;
+        max-width: 400px;
+        height: auto;
+        position: static;
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 510px) {
