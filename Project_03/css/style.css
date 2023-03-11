@@ -43,16 +43,20 @@ header nav {
     float: right;
 }
 
-header nav ul {
+nav.mobile-menu {
+    display: none;
+}
+
+header nav.desktop-menu ul {
     list-style-type: none;
 }
 
-header nav li {
+header nav.desktop-menu li {
     float: left;
     padding: 0 20px;
 }
 
-header nav ul a {
+header nav.desktop-menu li a {
     color: white;
     text-decoration: none;
 }
@@ -80,6 +84,7 @@ section.section__1 {
     width: 100%;
     background: #472562;
     padding: 0 2%;
+    height: 400px;
 }
 
 section.section__1 .container {
@@ -90,25 +95,31 @@ section.section__1 .container {
     float: left;
     color: white;
     width: 50%;
+    margin-top: 40px;
+    padding-left: 60px;
+    position: relative;
+    left: 55px;
 }
 
 .text_section__1 h2 {
     font-weight: 300;
+    font-size: 26px;
 }
 
 .text_section__1 p {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 20px;
 }
 
-.text_section__1 {
+.text_section__1 ul {
     list-style-position: inside;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .text_section__1 ul li {
     float: left;
     width: 100%;
+    margin-top: 8px;
 }
 
 .btn__1 {
@@ -117,17 +128,85 @@ section.section__1 .container {
     height: 44px;
     color: white;
     cursor: pointer;
-    margin-top: 10px;
     text-align: center;
     line-height: 44px;
     border-radius: 30px;
+    font-size: 13px;
+    margin-top: 30px;
 }
 
 .device__section__1 {
     float: left;
     width: 50%;
-    height: 300px;
+    position: relative;
+    top: -30px;
+    height: 430px;
     background: url('/images/device.png');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 40px 2%;
+    }
+
+    nav.desktop-menu {
+        display: none;
+    }
+
+    nav.mobile-menu {
+        display: block;
+    }
+
+    .call__1 {
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 100px 0;
+    }
+
+    .call__1 h2 {
+        font-weight: 300;
+        font-size: 30px;
+        color: white;
+        padding: 0 0;
+    }
+
+    section.section__1 {
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .text_section__1 {
+        float: none;
+        margin-top: 0;
+        position: static;
+        display: inline-block;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .text_section__1 ul {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .text_section__1 ul li {
+        float: none;
+        text-align: left;
+    }
+
+    .btn__1 {
+        display: inline-block;
+    }
+
+    .device__section__1 {
+        display: none;
+    }
 }
