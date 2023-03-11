@@ -44,7 +44,43 @@ header nav {
 }
 
 nav.mobile-menu {
+    cursor: pointer;
     display: none;
+    width: 32px;
+    height: 32px;
+    background: url('/images/menu.png');
+    background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover ul {
+    opacity: 1;
+}
+
+nav.mobile-menu ul {
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    width: 100%;
+    color: white;
+    list-style-type: none;
+    left: 0;
+    top: 73px;
+    background-color: white;
+    text-align: center;
+}
+
+nav.mobile-menu ul li {
+    border-bottom: 1px solid black;
+    padding: 8px 0;
+    transition: 0.5s;
+}
+nav.mobile-menu ul li:hover {
+    background: rgb(230, 230, 230);
+}
+
+nav.mobile-menu ul li a {
+    color: black;
+    text-decoration: none;
 }
 
 header nav.desktop-menu ul {
@@ -112,8 +148,9 @@ section.section__1 .container {
 }
 
 .text_section__1 ul {
-    list-style-position: inside;
+    list-style-position: outside;
     font-size: 15px;
+    padding-left: 15px;
 }
 
 .text_section__1 ul li {
