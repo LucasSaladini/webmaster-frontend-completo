@@ -75,3 +75,59 @@ header nav ul a {
     margin-top: 10px;
     font-weight: 300;
 }
+
+section.section__1 {
+    width: 100%;
+    background: #472562;
+    padding: 0 2%;
+}
+
+section.section__1 .container {
+    max-width: 1000px;
+}
+
+.text_section__1 {
+    float: left;
+    color: white;
+    width: 50%;
+}
+
+.text_section__1 h2 {
+    font-weight: 300;
+}
+
+.text_section__1 p {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.text_section__1 {
+    list-style-position: inside;
+    font-size: 13px;
+}
+
+.text_section__1 ul li {
+    float: left;
+    width: 100%;
+}
+
+.btn__1 {
+    background: #FF703D;
+    width: 165px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 30px;
+}
+
+.device__section__1 {
+    float: left;
+    width: 50%;
+    height: 300px;
+    background: url('/images/device.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
