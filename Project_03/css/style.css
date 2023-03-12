@@ -126,6 +126,7 @@ section.section__1 {
 
 section.section__1 .container {
     max-width: 1000px;
+    height: calc(100% + 30px);
 }
 
 .text_section__1 {
@@ -178,7 +179,7 @@ section.section__1 .container {
     width: 50%;
     position: relative;
     top: -30px;
-    height: 430px;
+    height: 100%;
     background: url('/images/device.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -208,7 +209,106 @@ section.section__1 .container {
 
 .section__2 img {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
+    position: relative;
+    top: 70px;
+}
+.section__3 {
+    width: 100%;
+}
+
+.part__1 {
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background: #835FA7;
+    color: white;
+}
+
+.wrapper__part__1 {
+    max-width: 600px;
+    float: right;
+    padding-right: 30px;
+}
+
+.part__1 h2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.part__1 p {
+    font-size: 15px;
+    line-height: 35px;
+    margin-top: 10px;
+}
+
+.part__2 {
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background: white;
+}
+
+.about__author {
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+.title__author {
+    float: left;
+    width: 100%;
+}
+
+.wrapper__title_author {
+    float: left;
+}
+
+.title__author h2 {
+    color: #232323;
+    font-weight: 400;
+    font-size: 21px;
+    padding-right: 20px;
+}
+
+.title__author p {
+    font-size: 13px;
+    color: #232323;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.title__author .img__author {
+    float: left;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -4px;
+    border-radius: 20px;
+    background: gray;
+}
+
+.text__author p {
+    color: #232323;
+    font-size: 15px;
+}
+
+.slider__bullets {
+    float: left;
+    width: 100%;
+    margin-top: 12px;
+    padding-left: 30px;
+}
+
+.slider__bullets span {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgb(200, 200, 200);
 }
 
 @media screen and (max-width: 830px) {
