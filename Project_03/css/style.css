@@ -32,8 +32,13 @@ header {
 header .logo {
     width: 160px;
     height: 40px;
-    background-color: #ccc;
     float: left;
+    background: url('/images/logo-danki.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: -5px;
 }
 
 header  .logo p {
@@ -284,9 +289,10 @@ section.section__1 .container {
     width: 40px;
     height: 40px;
     position: relative;
-    top: -4px;
     border-radius: 20px;
-    background: gray;
+    background: url('/images/actor1.png');
+    background-size: 100% 100%;
+    position: relative;
 }
 
 .text__author p {
