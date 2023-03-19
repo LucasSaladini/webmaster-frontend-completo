@@ -61,3 +61,52 @@ header ul li a {
     border: 5px solid white;
     /* background: url('') */
 }
+
+section.services > .container {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+
+section.services > .container .box_services {
+    background-image: url('/images/icone_dente.png');
+    background-size: 18px 18px;
+    background-position: center calc(100% - 5px);
+    background-repeat: no-repeat;
+}
+
+section.services > .container .box_services h2 {
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+section.services > .container .box_services p {
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+section.services > .container .box_services:nth-last-of-type(1) {
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+}
+
+section.services > .container .box_services:nth-last-of-type(2) {
+    width: 40%;
+    padding: 45px 2%;
+    background-color: #688293;
+    background-image: none;
+}
+
+section.services > .container .box_services:nth-last-of-type(3) {
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+}
