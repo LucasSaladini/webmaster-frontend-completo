@@ -48,3 +48,16 @@ header ul li a {
     text-decoration: none;
     color: #B4B4B4;
 }
+
+.mosaic_single {
+    float: left;
+    width: calc(100% / 6);
+}
+
+.img_mosaic_single {
+    width: 100%;
+    padding-top: 100%;
+    background: #ccc;
+    border: 5px solid white;
+    /* background: url('') */
+}
