@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    padding: 20px 2%;
+}
+
+header .logo img {
+    float: left;
+    width: 236px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 8px 0;
+}
+
+header nav ul li {
+    float: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #B4B4B4;
+}
