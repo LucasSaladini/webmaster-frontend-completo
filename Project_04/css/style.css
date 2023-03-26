@@ -28,16 +28,21 @@ header .logo img {
     width: 236px;
 }
 
-header nav {
+nav.menu_mobile {
+    display: none;
     float: right;
 }
 
-header nav ul {
+header nav.menu_desktop {
+    float: right;
+}
+
+header nav.menu_desktop ul {
     list-style: none;
     padding: 8px 0;
 }
 
-header nav ul li {
+header nav.menu_desktop ul li {
     float: left;
     font-size: 14px;
     text-transform: uppercase;
@@ -160,6 +165,14 @@ section.profile_container .text_profile p {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+    nav.menu_desktop {
+        display: none;
+    }
+
+    nav.menu_mobile {
+        display: block;
+    }
+
     section.services > .container {
         flex-direction: column;
     }
