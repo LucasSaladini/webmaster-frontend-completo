@@ -157,3 +157,60 @@ section.profile_container .text_profile p {
     font-size: 14px;
     margin-top: 8px;
 }
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    section.services > .container {
+        flex-direction: column;
+    }
+
+    section.services > .container .box_services:nth-last-of-type(1) {
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+
+    section.services > .container .box_services:nth-last-of-type(2) {
+        width: 94%;
+        max-width: 380px;
+        padding: 40px 2%;
+    }
+
+    section.services > .container .box_services:nth-last-of-type(3) {
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+
+    section.profile_container .profile_wrapper_2 {
+        display: inline-block;
+        text-align: center;
+    }
+
+    section.profile_container .img_profile {
+        width: 50%;
+        display: inline-block;
+        padding-top: 70%;
+        height: auto;
+    }
+
+    section.profile_container .text_profile {
+        display: inline-block;
+        width: 100%;
+        padding: 0 30px;
+        text-align: justify;
+    }    
+}
+
+@media screen and (max-width: 580px) {
+    section.profile_container .img_profile {
+        width: 80%;
+        padding-top: 110%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .logo img {
+        width: 170px;
+    }
+}
