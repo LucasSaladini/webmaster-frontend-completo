@@ -46,7 +46,6 @@ header nav.menu_desktop {
 header nav.menu_desktop ul {
     list-style: none;
     padding: 8px 0;
-    display: none;
 }
 
 header nav.menu_desktop ul li {
@@ -203,6 +202,40 @@ section.videos iframe {
     top: 0;
     width: 100%;
     height: 100%;
+}
+
+section.treatments {
+    padding: 70px 0 ;
+}
+
+section.treatments .treatment-container {
+    float: left;
+    width: 33.3%;
+}
+
+section.treatments > h2 {
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.treatments > .container {
+    padding: 50px 0;
+}
+
+.treatment-single {
+    padding: 20px;
+}
+
+.treatment-single h2 {
+    font-size: 18px;
+    color: #737373;
+}
+
+.treatment-single p {
+    font-size: 13px;
+    color: #695E5E;
+    padding: 10px 0;
 }
 
 /* Responsive */
