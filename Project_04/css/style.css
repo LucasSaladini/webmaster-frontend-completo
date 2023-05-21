@@ -322,6 +322,69 @@ section.reviews .review-single {
     font-size: 13px;
 }
 
+section.contact {
+    padding: 60px 0;
+}
+
+section.contact h2 {
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.contact form {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.form-wrapper {
+    float: left;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.form-wrapper span {
+    font-size: 13px;
+    color: #B4B4B4;
+}
+
+.form-wrapper input[type="text"], .form-wrapper input[type="email"], .form-wrapper input[type="tel"] {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #DADADA;
+    margin-top: 8px;
+}
+
+.form-wrapper textarea {
+    width: 100%;
+    padding: 8px;
+    height: 121px;
+    resize: none;
+    border: 1px solid #DADADA;
+    margin-top: 8px;
+}
+
+.form-wrapper input[type="submit"] {
+    width: 100px;
+    height: 35px;
+    border: 0;
+    background: #688293;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
 /* Responsive */
 @media screen and (max-width: 1024px) {
     .mosaic-single-single-img {
@@ -420,6 +483,10 @@ section.reviews .review-single {
     section.videos .box_video {
         width: 100%;
         padding-top: calc(100% * 0.6);
+    }
+
+    .w-50 {
+        width: 100%;
     }
 }
 
