@@ -65,10 +65,18 @@ section.banner {
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
     section.banner {
+        background-size: 90% auto;
+        background-position: 200% 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section.banner {
+        background-size: cover;
+        background-position: center;
         height: 70vw;
-        min-height: 0;
-        max-height: 800px;
+        min-height: 500px;
     }
 }
