@@ -93,6 +93,7 @@ section.banner {
     position: relative;
     left: -20px;
     height: 50px;
+    font-size: 21px;
 }
 
 .text-banner .text-banner-single:nth-of-type(4) {
