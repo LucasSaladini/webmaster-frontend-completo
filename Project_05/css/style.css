@@ -144,6 +144,37 @@ section.banner {
     left: -30px;
 }
 
+section.highlight-vehicles {
+    padding: 90px 2%;
+}
+
+.title-line {
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.line1 {
+    position: absolute;
+    height: 2px;
+    background: black;
+    width: 100%;
+    top: 20px;
+}
+
+section.highlight-vehicles h2 {
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    text-transform: uppercase;
+    position: relative;
+    background: white;
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+
 /* Media Queries */
 @media screen and (max-width: 1400px) {
     section.banner {
