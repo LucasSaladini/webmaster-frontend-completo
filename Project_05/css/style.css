@@ -359,6 +359,42 @@ section.contact input[type=submit]  {
     width: 50%;
 }
 
+footer {
+    padding: 40px 2%;
+    background: #252525;
+}
+
+footer nav {
+    float: left;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav ul li {
+    float: left;
+    font-size: 19px;
+    font-style: italic;
+    padding: 0 35px;
+}
+
+footer nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav a.active {
+    color: #EB2D2D;
+}
+
+footer p {
+    float: right;
+    color: white;
+    font-size: 19px;
+    font-style: italic;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1400px) {
     section.banner {
@@ -443,6 +479,18 @@ section.contact input[type=submit]  {
 
     .w50 {
         width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer nav {
+        display: none;  
+    }
+
+    footer p {
+        float: none;
     }
 }
 
