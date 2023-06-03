@@ -208,19 +208,105 @@ section.highlight-vehicles .container {
     padding-top: 8px;
 }
 
-.highlight-showcase a {
-    margin-left: 8px;
-    color: white;
-    font-size: 16px;
-    font-style: italic;
-    width: 150px;
-    margin-top: 10px;
+.btn1 {
     text-align: center;
     display: block;
     line-height: 40px;
     background-color: #EB2D2D;
     text-decoration: none;
     border-bottom: 5px solid #B21E1E;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    width: 150px;
+}
+
+.highlight-showcase a {
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.services-description {
+    display: flex;
+}
+
+.half1 {
+    width: 50%;
+    padding: 90px 0;
+    background: #242424;
+    color: white;
+    text-align: right;
+}
+
+.half1-wrapper {
+    display: inline-block;
+    text-align: left;
+    padding-right: 30%;
+}
+
+.half1-wrapper h2 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.half1-wrapper ul {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.half1-wrapper li {
+    margin-left: 15px;
+}
+
+.half1-wrapper a {
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 40px;
+}
+
+.half2 {
+    width: 50%;
+    padding: 90px 100px;
+    background: #EB2D2D;
+    color: white;
+}
+
+.half2 h2 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.half2 .review-single {
+    margin-top: 19px;
+}
+
+.review-single p {
+    font-size: 22px;
+}
+
+.arrows {
+    float: left;
+}
+
+.navigation {
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    max-width: 700px;
+}
+
+.navigation img {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.name-review {
+    float: right;
+    color: #252525;
+    font-size: 23px;
 }
 
 /* Media Queries */
@@ -231,12 +317,49 @@ section.highlight-vehicles .container {
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .half1 {
+        text-align: center;
+    }
+
+    .half1-wrapper {
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .half1-wrapper a {
+        display: inline-block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .half1-wrapper {
+        padding-right: 0;
+        text-align: left;
+    }
+
+
+    .half1-wrapper a {
+        display: inline-block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     section.banner {
         background-size: cover;
         background-position: center;
         height: 70vw;
         min-height: 500px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .half1-wrapper a {
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
     }
 }
 
@@ -253,6 +376,19 @@ section.highlight-vehicles .container {
 
     nav.mobile {
         display: block;
+    }
+
+    section.services-description {
+        flex-direction: column;
+    }
+
+    .half1, .half2 {
+        width: 100%;
+        padding: 80px 4%;
+    }
+
+    .half1 {
+        text-align: center;
     }
 }
 
