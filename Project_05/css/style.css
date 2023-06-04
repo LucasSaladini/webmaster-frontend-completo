@@ -411,7 +411,7 @@ section.sale {
 }
 
 .search1 {
-    width: 300px;
+    width: 90%;
 }
 
 .search1 h2 {
@@ -519,6 +519,15 @@ section.sale {
     padding: 0 10px;
 }
 
+.showcase-sale {
+    float: left;
+    width: 70%;
+}
+
+.showcase-sale .highlight-showcase {
+    margin-top: 20px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1400px) {
     section.banner {
@@ -603,6 +612,26 @@ section.sale {
 
     .w50 {
         width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search1 {
+        display: inline-block;
+    }
+
+    .search2 {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .showcase-sale {
+        float: left;
+        width: 100%;
+        text-align: center;
     }
 
     footer {
