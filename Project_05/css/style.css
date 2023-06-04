@@ -436,7 +436,7 @@ section.sale {
     top: 0;
     width: 30%;
     height: 20px;
-    background: rgb(200, 200, 200);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
     border-radius: 20px;
 }
 
@@ -444,8 +444,8 @@ section.sale {
     width: 26px;
     height: 26px;
     border-radius: 8px;
-    background: rgb(210, 210, 210);
-    border: 1px solid black;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
+    border: 1px solid #777;
     position: absolute;
     left: calc(30% - 13px);
     top: -3px;
@@ -495,6 +495,22 @@ section.sale {
     border-radius: 3px;
     vertical-align: top;
     cursor: pointer;
+    position: relative;
+}
+
+.circle {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    display: none;
+}
+
+.sale-form-wrapper input[type=checkbox]:checked + label > .circle {
+    display: block;
 }
 
 .sale-form-wrapper span {
