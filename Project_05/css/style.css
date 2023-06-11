@@ -643,6 +643,56 @@ section.sales-single .container {
     color: red;
 }
 
+section.about {
+    min-height: 90%;
+    padding: 60px 2% 20px 2%;
+}
+
+section.about .container {
+    margin-top: 30px;
+    max-width: 840px;
+}
+
+section.about .highlight-img-about {
+    width: 100%;
+    padding-top: 60%;
+    background: rgb(220, 220, 220);
+}
+
+section.about .author-description {
+    margin-top: 20px;
+}
+
+.author-description h2 {
+    font-size: 24px;
+}
+
+.author-description p {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 28px;
+}
+
+.author-description-2 {
+    margin-top: 40px;
+}
+
+.img-small {
+    width: 30%;
+    padding-top: 20%;
+    background: rgb(220, 220, 220);
+    float: left;
+    background-position: center;
+    background-size: contain;
+}
+
+.author-description-2 p {
+    float: left;
+    width: 70%;
+    padding: 15px;
+    line-height: 28px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1400px) {
     section.banner {
@@ -811,6 +861,16 @@ section.sales-single .container {
 
     section.highlight-vehicles .title-line h2 {
         font-size: 23px;
+    }
+
+    .img-small {
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    .author-description-2 p {
+        width: 100%;
+        padding: 20px 0;
     }
 }
 
