@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.article1 {
+    width: 100%;
+    padding: 30px;
+    background: rgb(210, 210, 210);
+}
