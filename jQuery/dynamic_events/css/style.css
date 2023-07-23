@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.test {
+    width: 20px;
+    height: 20px;
+    background: green;
+    display: none;
+}
