@@ -11,16 +11,28 @@
     <div class="bg">
       <div class="form">
         <div class="closeBtn">X</div>
-        <form action="">
+        <form action="" id="register">
           <input
             type="text"
             name="name"
             id="name"
             placeholder="Nome Completo"
           />
-          <input type="email" name="email" id="email" placeholder="E-mail" />
-          <input type="tel" name="phone" id="phone" placeholder="Telefone" />
-          <input type="submit" name="action" value="Cadastrar" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Telefone"
+            required
+          />
+          <input type="submit" name="action" value="Cadastrar" required />
         </form>
       </div>
     </div>
