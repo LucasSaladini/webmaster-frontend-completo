@@ -26,14 +26,22 @@ $(function() {
     })
 
     $('form#register').submit(function(e) {
-        e.preventDefault()
-
+        
         var name = $('input[name=name').val()
         var phone = $('input[name=phone').val()
         var email = $('input[name=email').val()
 
         if(verifyName(name) == false) {
             applyInvalidField($('input[name=name]'))
+            return false
+        } else if(verifyPhone(phone) == false) {
+            applyInvalidField($('input[name=phone]'))
+            return false
+        } else if(verifyEmail(email) == false) {
+            applyInvalidField($('input[name=email]'))
+            return false
+        } else {
+            alert('Formulário enviado com sucesso!')
         }
     })
 
@@ -56,7 +64,26 @@ $(function() {
                 }
             }
         } else {
+            return false
+        }
+    }
 
+    function verifyPhone(phone) {
+        if(phone == '') {
+            return false
+        }
+
+        if(phone.match(/^\([0-9]{2}\)[0-9]{5}-[0-9]{4}$/) == null) {
+            return false
+        }
+    }
+
+    function verifyEmail(email) {
+        if(email == '') {
+            return false
+        }
+
+        if(email.match(/^([a-z0-9-_.]{1,})+@+([a-z.]{1,})$/) == null) {
             return false
         }
     }
@@ -71,6 +98,6 @@ $(function() {
     function resetInvalidField(el) {
         el.css('color', '#ccc')
         el.css('border', '1px solid #ccc')
-        el.val('Campo inválido')
+        el.val('')
     }
 })
