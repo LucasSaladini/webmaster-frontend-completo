@@ -21,6 +21,10 @@ $(function() {
         })
     }
 
+    $('input').focus(function() {
+        resetInvalidField($(this))
+    })
+
     $('form#register').submit(function(e) {
         e.preventDefault()
 
@@ -28,7 +32,18 @@ $(function() {
         var phone = $('input[name=phone').val()
         var email = $('input[name=email').val()
 
+        if(verifyName(name) == false) {
+            applyInvalidField($('input[name=name]'))
+        }
+    })
+
+    function verifyName(name) {
         //Contando a quantidade de espaços e os respectivos valores
+        if(name == '') {
+            return false
+        }
+
+        
         var amount = name.split(' ').length
         var splitStr = name.split(' ')
 
@@ -37,19 +52,25 @@ $(function() {
                 if(splitStr[i].match(/^[A-Z]{1}[a-z]{1,}$/)) {
                     console.log('Nossa condição bateu, continuar')
                 } else {
-                    applyInvalidField($('input[name=name'))
                     return false
                 }
             }
         } else {
-            applyInvalidField($('input[name=name'))
+
             return false
         }
+    }
 
-        function applyInvalidField(el) {
-            el.css('border', '2px solid red')
-            el.val('Campo inválido')
-            el.data('invalid', 'true')
-        }
-    })
+    function applyInvalidField(el) {
+        el.css('color', 'red')
+        el.css('border', '2px solid red')
+        el.val('Campo inválido')
+        //el.data('invalid', 'true')
+    }
+
+    function resetInvalidField(el) {
+        el.css('color', '#ccc')
+        el.css('border', '1px solid #ccc')
+        el.val('Campo inválido')
+    }
 })
