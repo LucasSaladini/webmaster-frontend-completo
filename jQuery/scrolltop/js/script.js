@@ -1,27 +1,19 @@
 $(function() {
-    verifyMenuClick()
+    $(window).scroll(function() {
+        $('.sessao').each(function() {
+            var windowOffY = $(window).scrollTop()
+            var windowHeight = $(window).height()
+            var elOffY = $(this).offset().top
 
-    function verifyMenuClick() {
-        $('a').click(function() {
-            var href = $(this).attr('href')
+            if(elOffY + 30 < (windowOffY + windowHeight) && elOffY + 30 + $(this).height() > windowOffY) {
+                $('a').css('border-bottom', '0')
 
-            $.ajax({
-                'beforeSend': function() {
-                    console.log('Calling before send')
-                },
-                'timeout': 10000,
-                'url':href,
-                'error': function(jqXHR, textStatus, errorThrown) {
-                    if(jqXHR.statusText = 'Not Found') {
-                        console.log('Página não encontrada')
-                    }
-                },
-                'success': function(data) {
-                    $(data).appendTo('#container').fadeIn()
-                }
-            })
+                var target = $(this).attr('target')
 
-            return false
+                $('.' + target).css('border-bottom', '2px solid #444')
+                
+                return
+            }
         })
-    }
+    })
 })
