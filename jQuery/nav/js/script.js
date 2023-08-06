@@ -17,6 +17,7 @@ $(function() {
                     }
                 },
                 'success': function(data) {
+                    $('#container').html('')
                     $(data).appendTo('#container').fadeIn()
                 }
             })
