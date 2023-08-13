@@ -63,8 +63,7 @@ nav.mobile-menu:hover ul {
 }
 
 nav.mobile-menu ul {
-    opacity: 0;
-    transition: 1s;
+    display: none;
     position: absolute;
     width: 100%;
     color: white;
