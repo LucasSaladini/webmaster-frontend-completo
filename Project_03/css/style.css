@@ -254,10 +254,20 @@ section.section__1 .container {
     background: white;
 }
 
+.scroll__team {
+    max-width: 600px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.scroll__wrapper {
+    width: 100%;
+}
+
 .about__author {
     float: left;
-    max-width: 600px;
-    padding-left: 30px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .title__author {
@@ -303,7 +313,7 @@ section.section__1 .container {
     float: left;
     width: 100%;
     margin-top: 12px;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .slider__bullets span {
