@@ -36,9 +36,30 @@ $(function() {
             $('.price-bar-fill').css('width', currentValue+'%')
 
             currentPrice = (currentValue/100) * maxPrice
+            currentPrice = formatPrice(currentPrice)
+
             $('.search-price').html('R$'+currentPrice)
         }
     })
+
+    function formatPrice(currentPrice) {
+        currentPrice = currentPrice.toFixed(2)
+        price_arr = currentPrice.split('.')
+
+        var newPrice = formatAll(price_arr)
+
+        return newPrice
+    }
+
+    function formatAll(price_arr) {
+        if(price_arr[0] < 1000) {
+            return price_arr[0]+','+price_arr[1]
+        }else if(price_arr[0] < 10000) {
+            return price_arr[0][0]+'.'+price_arr[0].substr(1, price_arr[0].length)+','+price_arr[1]
+        }else{
+            return price_arr[0][0]+price_arr[0][1]+'.'+price_arr[0].substr(2, price_arr[0].length)+','+price_arr[1]
+        }
+    }
 
     function disableTextSelection() {
         $('body').css('-webkit-user-select', 'none')
