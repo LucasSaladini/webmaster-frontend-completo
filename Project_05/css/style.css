@@ -436,7 +436,7 @@ section.sale {
     position: absolute;
     left: 0;
     top: 0;
-    width: 30%;
+    width: 0;
     height: 20px;
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
     border-radius: 20px;
@@ -449,7 +449,7 @@ section.sale {
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
     border: 1px solid #777;
     position: absolute;
-    left: calc(30% - 13px);
+    left: 0;
     top: -3px;
     cursor: pointer;
 }
