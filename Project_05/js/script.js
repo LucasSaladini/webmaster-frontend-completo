@@ -76,4 +76,71 @@ $(function() {
         $('body').css('-o-user-select', 'auto')
         $('body').css('user-select', 'auto')  
     }
+
+    var imgShow = 3
+    var maxIndex = Math.ceil($('.mini-img-wrapper').length / 3) -1 
+    var curIndex = 0
+
+    initSlider()
+    navigateSlider()
+    clickSlider()
+
+    function initSlider() {
+        var amount = $('.mini-img-wrapper').length * 33.3
+        var elScroll = $('.gallery-nav-wrapper')
+        var elSingle = $('.mini-img-wrapper')
+        
+        elScroll.css('width', amount+'%')
+        elSingle.css('width', 33.3*(100/amount)+'%')
+    }
+
+    function navigateSlider() {
+        $('.arrow-right-nav').click(function() {
+            if(curIndex < maxIndex) {
+                curIndex++
+
+                var elOff = $('.mini-img-wrapper').eq(curIndex * 3).offset().left - $('.gallery-nav-wrapper').offset().left
+                
+                $('.gallery-nav').animate({
+                    'scrollLeft': elOff+'px'
+                })
+            }
+        })
+
+        $('.arrow-left-nav').click(function() {
+            if(curIndex > 0) {
+                curIndex--
+
+                var elOff = $('.mini-img-wrapper').eq(curIndex * 3).offset().left - $('.gallery-nav-wrapper').offset().left
+
+                $('.gallery-nav').animate({
+                    'scrollLeft': elOff+'px'
+                }) 
+            }
+        })
+    }
+
+    function clickSlider() {
+        $('.mini-img-wrapper').click(function() {
+            $('.mini-img-wrapper').css('background-color', 'transparent')
+            $(this).css('background-color', 'rgb(210, 210, 210)')
+
+            var img = $(this).children().css('background-image')
+            
+            $('.highlight-photo').css('background-image', img)
+        })
+
+        $('.mini-img-wrapper').eq(0).click()
+    }
+
+    $('[goto=contact').click(function() {
+        $('nav a').css('color', 'black')
+        $(this).css('color', '#EB2D2D')
+
+        $('html, body').animate({
+            'scrollTop': $('#contact').offset().top
+        })
+
+        return false
+    })
 })
