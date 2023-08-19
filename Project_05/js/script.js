@@ -133,14 +133,75 @@ $(function() {
         $('.mini-img-wrapper').eq(0).click()
     }
 
-    $('[goto=contact').click(function() {
-        $('nav a').css('color', 'black')
-        $(this).css('color', '#EB2D2D')
+    // $('[goto=contact').click(function() {
+    //     $('nav a').css('color', 'black')
+    //     $(this).css('color', '#EB2D2D')
 
-        $('html, body').animate({
-            'scrollTop': $('#contact').offset().top
-        })
+    //     $('html, body').animate({
+    //         'scrollTop': $('#contact').offset().top
+    //     })
 
+    //     return false
+    // })
+
+    var directory  = 'http://127.0.0.1:5500/'
+
+    $('[goto=contact]').click(function() {
+        location.href = directory+'index.html?contact'
         return false
     })
+
+    checkUrl()
+
+    function checkUrl() {
+        var url = location.href.split('/')
+        var curPage = url[url.length - 1].split('?')
+
+        if(curPage[1] != undefined && curPage[1] == 'contact') {
+            $('header nav a').css('color', 'black')
+            $('footer nav a').css('color', 'white')
+            $('[goto=contact').css('color', '#EB2D2D')
+            $('html, body').animate({
+                'scrollTop': $('#contact').offset().top
+            })
+        }
+    }
+
+    $('.mobile').click(function() {
+        $(this).find('ul').slideToggle()
+    })
+
+    navigateReviews()
+    initReviews()
+
+    var amountReview = $('.review-single p').length
+    var curIndexReview = 0
+
+    function initReviews() {
+        $('.review-single p').hide()
+        $('.review-single p ').eq(0).show()
+    }
+
+    function navigateReviews() {
+        $('[next]').click(function() {
+            curIndexReview++
+
+            if(curIndexReview >= amountReview)
+                curIndexReview = 0
+
+            $('.review-single p').hide()
+            $('.review-single p').eq(curIndexReview).show()
+            
+        })
+
+        $('[prev]').click(function() {
+            curIndexReview--
+
+            if(curIndexReview < 0)
+                curIndexReview = amountReview - 1
+            
+            $('.review-single p').hide()
+            $('.review-single p').eq(curIndexReview).show()
+        })
+    }
 })
