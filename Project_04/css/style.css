@@ -142,11 +142,11 @@ section.profile_container {
 }
 
 section.profile_container .container {
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 section.profile_container .profile_wrapper {
-    padding-top: 60%;
+    padding-top: 50%;
     position: relative;
 }
 
@@ -179,9 +179,10 @@ section.profile_container .text_profile h2 {
 }
 
 section.profile_container .text_profile p {
-    color: #4b4b4b;
+    color: rgb(130, 130, 130);
     font-size: 14px;
     margin-top: 8px;
+    line-height: 24px;
 }
 
 section.videos {
@@ -423,6 +424,26 @@ footer .footer-block {
     }
 }
 
+@media screen and (max-width: 850px) {
+    section.profile_container .profile_wrapper {
+        padding-top: 0;
+    }
+
+    section.profile_container .profile_wrapper_2 {
+        height: auto;
+        position: absolute;
+        text-align: center;
+        display: inline-block;
+    }
+
+    section.profile_container .text_profile {
+        display: inline-block;
+        text-align: justify;
+        width: 100%;
+        padding: 80px 30px 30px 30px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     nav.menu_desktop {
         display: none;
@@ -454,31 +475,6 @@ footer .footer-block {
         padding: 30px 2%;
     }
 
-    section.profile_container .profile_wrapper {
-        padding-top: 0;
-    }
-
-    section.profile_container .profile_wrapper_2 {
-        display: inline-block;
-        text-align: center;
-        height: auto;
-        position: static;
-    }
-
-    section.profile_container .img_profile {
-        width: 50%;
-        display: inline-block;
-        padding-top: 70%;
-        height: auto;
-    }
-
-    section.profile_container .text_profile {
-        display: inline-block;
-        width: 100%;
-        padding: 0 30px;
-        text-align: justify;
-    }
-
     section.videos {
         text-align: center;
     }
@@ -488,6 +484,7 @@ footer .footer-block {
         display: inline-block;
         float: none;
         padding-top: calc(70% * 0.6);
+        margin-top: 30px;
     }
 
     .mosaic-single-single-img {
