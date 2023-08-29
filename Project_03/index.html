@@ -201,10 +201,23 @@
             Excepteur enim excepteur esse aliquip ea laboris occaecat consequat
             veniam.Laborum ex tempor ex adipisicing.
           </p>
-          <form action="">
-            <input type="text" name="name" id="name" placeholder="Nome *" />
-            <input type="text" name="email" id="email" placeholder="E-mail *" />
+          <form method="post" action="form.php">
+            <input
+              required
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nome *"
+            />
+            <input
+              required
+              type="text"
+              name="email"
+              id="email"
+              placeholder="E-mail *"
+            />
             <textarea
+              required
               name="message"
               id="message"
               placeholder="Mensagem *"
@@ -243,6 +256,16 @@
     <!-- script -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnv7y3NuVB3H7-6XXXbtFUYOsvWql_d-8&"></script>
     <script src="/js/jquery-3.7.0.min.js.js"></script>
+    <script src="/js/jquery.form.min.js"></script>
+    <script>
+      $(function () {
+        $("form").ajaxForm({
+          success: function () {
+            alert("Formulário enviado com sucesso!")
+          }
+        })
+      })
+    </script>
     <script src="js/script.js"></script>
     <script src="/js/menu_responsive.js"></script>
     <script src="/js/menu_scroll.js"></script>
