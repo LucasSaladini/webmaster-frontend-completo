@@ -147,7 +147,7 @@ $(function() {
     var directory  = 'http://127.0.0.1:5500/'
 
     $('[goto=contact]').click(function() {
-        location.href = directory+'index.html?contact'
+        location.href = directory+'?contact'
         return false
     })
 
