@@ -40,6 +40,7 @@ try {
     $mail->Body    = $body;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
+    $this->mailer->CharSet ="utf-8"
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
