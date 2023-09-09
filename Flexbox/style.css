@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text_white {
+    color: white;
+}
+
+.gold {
+    background: gold;
+}
+
+.light_blue {
+    background: #00A3D9;
+}
+
+section.container {
+    width: 100%;
+}
+
+div.flex {
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+    display: flex;
+}
+
+div.w_50 {
+    width: 50%;
+}
+
+header.top {
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 17px;
+    position: relative;
+    top: 4px;
+}
+
+header.top a {
+    text-decoration: none;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
