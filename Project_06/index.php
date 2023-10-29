@@ -12,14 +12,16 @@
     <title>Projeto 06</title>
 </head>
 <body>
-    <div class="icons-social">
-        <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-    <!-- icons-social -->
     <section class="main">
+        <div class="layer"></div>
         <div class="center">
             <header>
+            <div class="icons-social">
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="clear"></div>
+            <!-- icons-social -->
                 <div class="logo">
                     Projeto 06
                 </div>
@@ -31,6 +33,7 @@
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </nav>
+                <div class="clear"></div>
             </header>
         </div>
         <!-- center -->
