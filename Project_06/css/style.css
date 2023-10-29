@@ -85,3 +85,40 @@ nav.desktop a {
     color: white;
     text-decoration: none;
 }
+
+.header_content {
+    position: relative;
+    z-index: 2;
+    margin: 110px 0;
+    max-width: 700px;
+}
+
+.header_content h2 {
+    font-size: 44px;
+    color: white;
+    font-weight: lighter;
+}
+
+.header_content h2 > span {
+    color: #2692FF;
+}
+
+.header_content p {
+    color: white;
+    margin-top: 18px;
+    font-weight: 16px;
+    font-weight: lighter;
+}
+
+.header_content a {
+    display: block;
+    width: 177px;
+    height: 44px;
+    background: #2692FF;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 18px;
+    line-height: 44px;
+    border-radius: 20px;
+}

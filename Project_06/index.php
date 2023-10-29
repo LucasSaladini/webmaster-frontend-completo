@@ -35,6 +35,23 @@
                 </nav>
                 <div class="clear"></div>
             </header>
+            <div class="header_content">
+                <h2>Bem-vindo ao nosso <span>website</span></h2>
+                <p>Duis qui ipsum qui proident amet consectetur ad proident velit consectetur aliqua. Laboris excepteur magna est ut dolor. 
+                    Irure consequat aliqua irure ut ut velit ullamco id quis non. Irure velit duis exercitation ullamco labore proident anim. 
+                    Ad aute esse proident occaecat culpa cillum duis pariatur duis. Culpa labore nulla et do magna est esse labore dolore ut nostrud irure.
+                    Amet qui aliquip et minim et exercitation fugiat. Cupidatat officia consectetur est qui ut ullamco officia culpa ut eiusmod. 
+                    Pariatur nisi ex occaecat eu tempor. Deserunt ea qui occaecat anim cupidatat anim elit commodo proident labore laborum.
+                </p>
+                <p>Duis qui ipsum qui proident amet consectetur ad proident velit consectetur aliqua. Laboris excepteur magna est ut dolor. 
+                    Irure consequat aliqua irure ut ut velit ullamco id quis non. Irure velit duis exercitation ullamco labore proident anim. 
+                    Ad aute esse proident occaecat culpa cillum duis pariatur duis. Culpa labore nulla et do magna est esse labore dolore ut nostrud irure.
+                    Amet qui aliquip et minim et exercitation fugiat. Cupidatat officia consectetur est qui ut ullamco officia culpa ut eiusmod. 
+                    Pariatur nisi ex occaecat eu tempor. Deserunt ea qui occaecat anim cupidatat anim elit commodo proident labore laborum.
+                </p>
+                <a href="#">Saiba mais</a>
+            </div>
+            <!-- header_content -->
         </div>
         <!-- center -->
     </section>
