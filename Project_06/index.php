@@ -144,5 +144,91 @@
         <!-- center -->
     </section>
     <!-- parallax -->
+    <section class="final_section">
+        <div class="center">
+            <div class="w-50 contact">
+                <h2><div class="border_effect"></div>Entre em contato</h2>
+                <form action="action">
+                    <input type="text" name="name" id="name" placeholder="Insira seu nome">
+                    <input type="email" name="email" id="email" placeholder="Insira seu e-mail">
+                    <textarea name="message" id="message" placeholder="Insira sua mensagem"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <!-- w-50 contact -->
+            <div class="w-50 team">
+                <h2><div class="border_effect"></div>Conheça nosso time</h2>
+                <div class="w-50 team_single">
+                    <div class="top_box_user">
+                        <div class="box_avatar"></div><div class="user_info">
+                            <p>Lucas Saladini</p>
+                            <p>CEO / Instrutor</p>
+                        </div>
+                    </div>
+                    <!-- top_box_user -->
+                    <div class="description_user_box">
+                        <p>Anim labore velit duis incididunt nisi pariatur nulla cupidatat irure aliqua.
+                            Nostrud voluptate id laborum exercitation adipisicing consequat amet officia labore esse labore.
+                        </p>
+                    </div>
+                    <!-- description_user_box -->
+                </div>
+                <!-- w-50 team_single -->
+                <div class="w-50 team_single">
+                    <div class="top_box_user">
+                        <div class="box_avatar"></div><div class="user_info">
+                            <p>Lucas Saladini</p>
+                            <p>CEO / Instrutor</p>
+                        </div>
+                    </div>
+                    <!-- top_box_user -->
+                    <div class="description_user_box">
+                        <p>Anim labore velit duis incididunt nisi pariatur nulla cupidatat irure aliqua.
+                            Nostrud elit labore culpa nulla consectetur dolore et fugiat ipsum aute sint duis magna ex.
+                        </p>
+                    </div>
+                    <!-- description_user_box -->
+                </div>
+                <!-- w-50 team_single -->
+                <div class="w-50 team_single">
+                    <div class="top_box_user">
+                        <div class="box_avatar"></div><div class="user_info">
+                            <p>Lucas Saladini</p>
+                            <p>CEO / Instrutor</p>
+                        </div>
+                    </div>
+                    <!-- top_box_user -->
+                    <div class="description_user_box">
+                        <p>Anim labore velit duis incididunt nisi pariatur nulla cupidatat irure aliqua.
+                            Nostrud elit labore culpa nulla consectetur dolore et fugiat ipsum aute sint duis magna ex.
+                        </p>
+                    </div>
+                    <!-- description_user_box -->
+                </div>
+                <!-- w-50 team_single -->
+                <div class="w-50 team_single">
+                    <div class="top_box_user">
+                        <div class="box_avatar"></div><div class="user_info">
+                            <p>Lucas Saladini</p>
+                            <p>CEO / Instrutor</p>
+                        </div>
+                    </div>
+                    <!-- top_box_user -->
+                    <div class="description_user_box">
+                        <p>Anim labore velit duis incididunt nisi pariatur nulla cupidatat irure aliqua.
+                            Nostrud elit labore culpa nulla consectetur dolore et fugiat ipsum aute sint duis magna ex.
+                        </p>
+                    </div>
+                    <!-- description_user_box -->
+                </div>
+                <!-- w-50 team_single -->
+                <div class="clear"></div>
+            </div>
+            <!-- w-50 contact team -->
+            <div class="clear"></div>
+        </div>
+        <!-- center -->
+    </section>
+    <!-- final_section -->
 </body>
 </html>
