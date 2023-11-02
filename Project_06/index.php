@@ -126,6 +126,7 @@
         <!-- box_plans -->
     </section>
     <section class="parallax">
+        <div class="overlay_parallax"></div>
         <div class="center">
             <h2>Sobre nossa <span>empresa</span></h2>
             <p>Nisi anim enim quis non est non. 

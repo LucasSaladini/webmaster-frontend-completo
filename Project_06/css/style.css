@@ -204,10 +204,38 @@ nav.desktop a {
 
 section.parallax {
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     background-image: url('/images/bg_parallax.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
+    padding: 40px 0;
+    background-attachment: fixed;
+}
+
+section.parallax > .center {
+    position: relative;
+    z-index: 2;
+    min-height: 960px;
+}
+
+.overlay_parallax {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(20, 20, 20, 0.6);
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+section.parallax h2 {
+    text-align: center;
+} 
+
+section.parallax p {
+    margin-top: 15px;
 }
 
 section.parallax > .center h2 >span {
