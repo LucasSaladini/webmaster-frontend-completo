@@ -65,6 +65,47 @@ section.main header {
     margin-top: 20px;
 }
 
+nav.mobile {
+    display: none;
+    float: right;
+}
+
+nav.mobile ul {
+    display: none;
+}
+
+nav.mobile ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 120px;
+    list-style-type: none;
+    background: white;
+    width: 100%;
+    z-index: 2;
+}
+
+nav.mobile li {
+    padding: 8px 0;
+    text-align: center;
+    font-weight: lighter;
+    border-bottom: 1px solid #444;
+}
+
+nav.mobile > i {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 23px;
+}
+
+nav.mobile a {
+    text-decoration: none;
+    color: #444;
+    display: block;
+}
+
 nav.desktop {
     float: right;
     margin-top: 20px;
@@ -88,7 +129,7 @@ nav.desktop a {
 
 .header_content {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     margin: 110px 0;
     max-width: 700px;
 }
@@ -211,12 +252,13 @@ section.parallax {
     position: relative;
     padding: 40px 0;
     background-attachment: fixed;
+    color: white;
 }
 
 section.parallax > .center {
     position: relative;
     z-index: 2;
-    min-height: 960px;
+    min-height: 400px;
 }
 
 .overlay_parallax {
@@ -359,6 +401,14 @@ section.final_section h2:hover > .border_effect {
     font-style: italic;
 }
 
+footer {
+    width: 100%;
+    padding: 10px 2%;
+    text-align: center;
+    color: white;
+    background: #444;
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
     .plans_box_single {
@@ -374,5 +424,13 @@ section.final_section h2:hover > .border_effect {
     .team > .w-50 {
         width: 100%;
         margin: 15px;
+    }
+
+    nav.mobile {
+        display: block;
+    }
+
+    nav.desktop {
+        display: none;
     }
 }
