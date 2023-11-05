@@ -17,3 +17,27 @@ nav ul a, nav.brand-logo {
     top: 50%;
     width: 100%;
 }
+
+.custom_title {
+    position: relative;
+}
+
+.custom_title h2{
+    font-size: 30px;
+    color: #777;
+    z-index: 2;
+    background: white;
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.custom_title > div {
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    background: #777;
+    left: 0;
+    top: 50px;
+    z-index: 1;
+}
