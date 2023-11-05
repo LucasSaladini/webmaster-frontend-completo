@@ -23,7 +23,7 @@ nav ul a, nav.brand-logo {
 }
 
 .custom_title h2{
-    font-size: 30px;
+    font-size: 26px;
     color: #777;
     z-index: 2;
     background: white;
@@ -36,8 +36,19 @@ nav ul a, nav.brand-logo {
     width: 100%;
     position: absolute;
     height: 3px;
-    background: #777;
+    background: #999;
     left: 0;
     top: 50px;
     z-index: 1;
+}
+
+.offset_team {
+    position: relative;
+    top: 87px;
+}
+
+@media screen and (max-width: 768px) {
+    .offset_team {
+        top: 0;
+    }
 }
