@@ -5,6 +5,7 @@ section.bg-top {
     background-size: cover;
     background-position: center;
     position: relative;
+    background-attachment: fixed;
 }
 
 .overlay {
@@ -13,6 +14,11 @@ section.bg-top {
     position: absolute;
     left: 0;
     top: 0;
-    background: rgba(40, 40, 40, 0.4);
+    background: rgba(100, 100, 100, 0.4);
     z-index: 1;
+}
+
+.text-bg {
+    color: white;
+    margin-top: 50px;
 }
