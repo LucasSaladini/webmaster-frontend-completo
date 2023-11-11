@@ -54,3 +54,60 @@ section.about {
     height: 4px;
     background: #3fa3c5;
 }
+
+section.differential {
+    padding: 30px;
+    color: #646464;
+}
+
+section.differential .col-md-4 {
+    padding: 0 40px;
+}
+
+section.differential h2 {
+    padding: 10px 0;
+    border-bottom: 1px dotted black;
+}
+
+section.invite {
+    background: #3fa3c5;
+    padding: 15px 0;
+}
+
+section.invite h2 {
+    font-size: 28px;
+    color: white;
+    margin: 15px 0;
+}
+
+section.invite button {
+    width: 100px;
+}
+
+section.invite form {
+    margin: 15px 0;
+}
+
+section.contact {
+    padding: 30px 0;
+    background: rgb(225, 225, 225);
+}
+
+section.contact textarea {
+    resize: none;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 14px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+footer a {
+    font-size: 17px;
+}
