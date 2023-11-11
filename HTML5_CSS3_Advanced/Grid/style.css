@@ -9,14 +9,27 @@
     margin: 0 auto;
     padding: 0 2%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "content content2"
+        "footer footer"
+    ;
 }
 
-.col {
-    background: green;
+.header {
+    grid-area: header;
 }
 
-.w100 {
-    grid-column: 1/4;
+.footer {
+    grid-area: footer;
+}
+
+.content {
+    grid-area: content;
+}
+
+.content2 {
+    grid-area: content2;
 }
