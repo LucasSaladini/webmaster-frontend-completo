@@ -69,3 +69,50 @@ ul.submenu_desktop {
 ul.submenu_desktop li {
     padding: 8px;
 }
+
+nav.menu_mobile {
+    display: none;
+    float: right;
+}
+
+nav.menu_mobile > ul {
+    background:  white;
+    width: 100%;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    top: 47px;
+    display: none;
+}
+
+nav.menu_mobile > ul > li {
+    padding: 10px 8px;
+    display: inline-block;
+    width: 100%;
+}
+
+ul.submenu_mobile {
+    padding: 8px 15px;
+    list-style-type: none;
+}
+
+nav.menu_mobile a {
+    color: #01579b;
+    text-decoration: none;
+}
+
+.fa-bars {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    nav.menu_desktop {
+        display: none;
+    }
+
+    nav.menu_mobile {
+        display: block;
+    }
+}
