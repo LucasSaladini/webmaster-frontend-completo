@@ -58,7 +58,7 @@ nav.menu_desktop a:hover {
 ul.submenu_desktop {
     display: none;
     position: absolute;
-    left: 8px;
+    right: 0;
     top: 30px;
     width: 300px;
     padding: 8px 0;
