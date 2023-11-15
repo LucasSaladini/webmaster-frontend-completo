@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estilizando com JS</title>
+  </head>
+  <body>
+    <h1 id="main_text">Olá,</h1>
+    <script>
+      window.onload = function () {
+        var el = document.getElementById("main_text")
+
+        el.innerHTML = el.innerHTML + " Lucas"
+
+        el.style.color = "green"
+        el.style.marginLeft = "400px"
+        el.style.border = "3px solid red"
+      }
+    </script>
+  </body>
+</html>
