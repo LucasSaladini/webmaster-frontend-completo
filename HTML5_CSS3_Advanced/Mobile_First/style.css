@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.w33 {
+    width: 100%;
+    float: left;
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .w33 {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .w33 {
+        width: 33.3%;
+    }
+}
