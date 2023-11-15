@@ -1,0 +1,19 @@
+body {
+    background: blue;
+}
+
+_:-ms-lang(x), body {
+    background: black;
+}
+
+@-moz-document url-prefix() {
+    body {
+        background: green;
+    }
+
+    .box {
+        width: 500px;
+        height: 500px;
+        background: black;
+    }
+}
