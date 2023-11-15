@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header  {
+    height: 140px;
+    background: #ccc;
+}
+
+section {
+    height: 200px;
+    background: blue;
+}
+
+footer {
+    height: 140px;
+    background: orange;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
