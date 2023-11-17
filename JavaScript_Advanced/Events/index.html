@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+  </head>
+  <body>
+    <h1 id="main_text">Olá</h1>
+    <div class="test" onclick="displayMessage()" onmouseover="onOver()">
+      <p>Olá</p>
+    </div>
+    <div class="inner"></div>
+    <script>
+      function displayMessage() {
+        alert("Clicado")
+      }
+
+      function onOver() {
+        alert("Mouse hover")
+      }
+
+      function alertInner() {
+        alert("Alerta do Inner HTML")
+      }
+
+      el = document.querySelector(".inner")
+      el.innerHTML = '<p onclick="alertInner()">Clique aqui</p>'
+    </script>
+  </body>
+</html>
