@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notificações Push</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.8/push.min.js"
+      integrity="sha512-eiqtDDb4GUVCSqOSOTz/s/eiU4B31GrdSb17aPAA4Lv/Cjc8o+hnDvuNkgXhSI5yHuDvYkuojMaQmrB5JB31XQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      //   console.log(Push.Permission.get())
+
+      if (Push.Permission.get() == "granted") {
+        Push.create("Olá do website!", {
+          body: "Esta é uma notificação",
+          icon: "icon.png",
+          timeout: 8000,
+          vibrate: [100, 100, 100],
+          onClick: function () {
+            window.location.href = "http://127.0.0.1:5500/index.html"
+          }
+        })
+      } else {
+        Push.Permission.request()
+      }
+    </script>
+  </body>
+</html>
