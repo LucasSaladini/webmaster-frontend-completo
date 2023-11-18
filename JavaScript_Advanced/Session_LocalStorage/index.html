@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session Storage e Local Storage</title>
+  </head>
+  <body>
+    <script>
+      if (typeof Storage !== "undefined") {
+        alert("O navegador é compatível")
+        initialize()
+      } else {
+        alert("O navegador não é compatível, atualize o navegador")
+      }
+
+      function initialize() {
+        if (sessionStorage.getItem("name") !== null) {
+          alert("Olá, " + sessionStorage.name + ", seja bem vindo de volta")
+        } else {
+          alert("Essa é a sua primeira visita ao nosso site")
+          sessionStorage.name = "usuário"
+        }
+      }
+    </script>
+  </body>
+</html>
