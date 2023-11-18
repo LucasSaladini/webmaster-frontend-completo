@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orientação a Objetos</title>
+  </head>
+  <body>
+    <script>
+      var person1 = new person("Lucas", 30, 70)
+
+      function person(name, age, weight) {
+        this.name = name
+        this.age = age
+        this.weight = weight
+
+        console.log(this.name)
+        console.log(this.age)
+        console.log(this.weight)
+      }
+    </script>
+  </body>
+</html>
